@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+
+/android
+
+/ios
+
+/node_modules/
+
+debug.log
+
+.env
+AISelfIntroduction/android
+AISelfIntroduction/ios
