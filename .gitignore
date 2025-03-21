@@ -1,64 +1,9 @@
-
-.classpath
-.settings
-local.properties
-android.iml
-
-# C++ Cross platform
-.cxx
-
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# Dependencies
-node_modules
-.pnp
-.pnp.js
-.expo/
-npm-debug.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
-web-build/
-
-# Local env files
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Testing
-coverage
-
-# Turbo
-.turbo
-
-# Vercel
-.vercel
-
-# Build Outputs
-.next/
-out/
-build
-dist
-lib
-
-# Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Misc
-*.pem
-vendor/
-
-# macOS
+# OSX
+#
 .DS_Store
 
 # Xcode
+#
 build/
 *.pbxuser
 !default.pbxuser
@@ -75,33 +20,55 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-project.xcworkspace
+**/.xcode.env.local
 
 # Android/IntelliJ
+#
 build/
 .idea
 .gradle
 local.properties
 *.iml
 *.hprof
-
-# BUCK
-buck-out/
-\.buckd/
+.cxx/
 *.keystore
 !debug.keystore
 
-# Bundle artifacts
+# node.js
+#
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Bundle artifact
 *.jsbundle
 
-# Expo
-.expo/
-web-build/
-dist/
+# Ruby / CocoaPods
+**/Pods/
+/vendor/bundle/
 
-# release-it
-package-lock.json
+# Temporary files created by Metro to check the health of the file watcher
+.metro-health-check*
 
-# AISelfIntroduction apps
-AISelfIntroduction/ios/
-AISelfIntroduction/android/
+# testing
+/coverage
+
+# Yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
